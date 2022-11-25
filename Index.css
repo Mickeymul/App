@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+}
+.app{
+    background: linear-gradient(to left,aqua,blue);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    text-align: center;
+    padding-bottom: 1rem;
+}
+.slideshow{
+    flex: 1;
+    background: bisque;
+    position: relative;
+}
+.slide{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    transform: scale(1);
+    transition: all .9s ease-out;
+}
+.slide:nth-last-child(2){
+    opacity: 1;
+    transform: scale(1.o8);
+}
